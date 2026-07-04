@@ -29,5 +29,4 @@ A simple admin-driven CRM built with React, Express, and SQLite.
    - Backend API: http://localhost:5010
 
 ## Database
-The app uses SQLite via better-sqlite3. No separate database server is required.
-The database file is created automatically at backend/crm.db.
+it use the Mongodb as database for connect it please put rhe connection url in the connection.js file 
