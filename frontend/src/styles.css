@@ -1,0 +1,38 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #14213d;
+  background: #f5f7fb;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: linear-gradient(135deg, #eef2ff 0%, #f8fafc 100%); }
+button, input, select, textarea { font: inherit; }
+
+.app-shell { max-width: 1280px; margin: 0 auto; padding: 24px; }
+.topbar, .card, .nav-links { background: white; border-radius: 16px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08); }
+.topbar { display: flex; justify-content: space-between; align-items: center; padding: 20px 24px; margin-bottom: 16px; }
+.nav-links { display: flex; gap: 12px; padding: 12px 20px; margin-bottom: 20px; }
+.nav-links a { color: #2563eb; text-decoration: none; font-weight: 600; }
+.content-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 20px; }
+.card { padding: 20px; }
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; }
+.stat-card { padding: 14px; border: 1px solid #e2e8f0; border-radius: 12px; background: #f8fafc; }
+.stat-card span { display: block; font-size: 0.9rem; color: #64748b; margin-bottom: 8px; }
+.stat-card strong { font-size: 1.4rem; }
+.lead-form, .employee-form, .filters { display: grid; gap: 10px; }
+.lead-form input, .lead-form select, .lead-form textarea, .employee-form input, .filters input, .filters select { padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 10px; }
+.button-row { display: flex; gap: 10px; }
+button { padding: 10px 14px; border: none; border-radius: 10px; cursor: pointer; background: #2563eb; color: white; }
+button.secondary { background: #e2e8f0; color: #0f172a; }
+button.danger { background: #dc2626; }
+button.ghost-button { background: transparent; color: #2563eb; border: 1px solid #bfdbfe; }
+.table-wrapper { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 12px 10px; border-bottom: 1px solid #e2e8f0; text-align: left; }
+.message { margin-top: 10px; color: #2563eb; }
+.login-card { max-width: 420px; margin: 80px auto; padding: 28px; }
+.login-card h1 { margin-top: 0; }
+.login-card form { display: grid; gap: 10px; }
+.login-card small { color: #64748b; display: block; margin-top: 10px; }
+.section-heading { display: flex; justify-content: space-between; gap: 12px; align-items: center; margin-bottom: 12px; }
+@media (max-width: 860px) { .content-grid { grid-template-columns: 1fr; } .section-heading { flex-direction: column; align-items: stretch; } }
